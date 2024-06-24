@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "",
     "main": "src/main.js",
+    "scripts": {
+        "check:web3": "npx ts-node src/checkWeb3.ts",
+        "check:relay": "npx ts-node src/checkRelay.ts",
+        "payment": "npx ts-node src/payment.ts"
+    },
     "directories": {
         "test": "test"
     },
@@ -22,14 +27,16 @@
         "@types/mocha": "^10.0.0",
         "@types/node": "^12.20.43",
         "@types/urijs": "^1.19.12",
-        "acc-sdk-client-v2": "~2.2.9",
+        "acc-sdk-client-v2": "~2.2.12",
         "assert": "^2.0.0",
+        "axios": "^1.6.7",
         "beautify": "^0.0.8",
         "chai": "^4.3.7",
         "mocha": "10.1.0",
         "prettier": "^2.5.1",
         "ts-node": "^10.5.0",
         "typescript": "^4.6.2",
-        "xhr2": "^0.2.1"
+        "xhr2": "^0.2.1",
+        "urijs": "^1.19.7"
     }
 }
